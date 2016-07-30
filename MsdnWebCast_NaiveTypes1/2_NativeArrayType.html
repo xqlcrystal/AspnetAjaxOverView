@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="info"></div>
+    <script type="text/javascript">
+        function display(text) {
+            document.getElementById("info").innerHTML += (text + "<br/>");
+        }
+        Array.prototype.display = function () {
+            window.display("A:" + this);
+        }
+
+        function com(x, y) {
+            return x - y;
+        }
+
+        var A = new Array(1, 2, 3, 4, 5);
+        display("Array initialized");
+        A.display();
+
+        display("a.push(6, 7)");
+        A.push(6, 7);
+        A.display();
+
+        display("A.shift()" + A.shift());
+        A.display();
+
+        display("a.unshift(8)");
+        A.unshift(8);
+        A.display();
+
+        display("A.pop()" + A.pop());
+        A.display();
+
+        display("A.concat(9,10)" + A.concat(9, 10));
+        A.display();
+
+        display("[" + A.join("],[") + "]");
+
+        display(A.slice(2, 5));
+        A.display();
+
+        display(A.slice(2, -2));
+        A.display();
+
+        display(A.splice(3, 2));
+        A.display();
+
+        display(A.splice(2, 0, 7, 8));
+        A.display();
+
+        A.splice(2, 1, 9, 10);
+        A.display();
+
+        A.reverse();
+        A.display();
+
+        A.sort();
+        A.display();
+        A.sort(function (x, y) { return y - x; });
+        A.display();
+
+
+        A.sort(com);
+        A.display();
+
+     
+    </script>
+</body>
+</html>

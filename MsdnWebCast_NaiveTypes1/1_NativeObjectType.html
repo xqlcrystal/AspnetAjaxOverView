@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="info"></div>
+    <script type="text/javascript">
+        function display(text) {
+            document.getElementById("info").innerHTML += (text + "<br/>");
+        }
+        function useAsDictionary() {
+            //var o = new Object();
+            //o["name"] = "jeffrey zhao";
+            //o.Salary = 1000;
+            var o = { "name": "Jeffrey zhao", "Salary": 2000 };
+            display("Name:" + o.name);
+            display("Salary:" + o.Salary);
+            display("---------------------");
+        }
+
+        function useforInstatement() {
+            var o = new Object();
+            for (var i = 0; i < 10; i++) {
+                var key = "key_" + i;
+                o[key] = Math.random();
+            }
+
+            delete o["key_5"];
+            for (var key in o) {
+                display("key " + key + ",Value " + o[key]);
+            }
+
+        }
+
+        useAsDictionary();
+        useforInstatement();
+    </script>
+</body>
+</html>

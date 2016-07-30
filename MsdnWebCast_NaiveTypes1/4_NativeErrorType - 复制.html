@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="Error.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        try {
+            throwError();
+        } catch (e) {
+            var errMsg = ("Message:" + e.message + "\n");
+            if (!e.stack) {
+                errMsg += ("Description:" + e.description);
+                errMsg+=("Number:"+e.number);
+            } else {
+                errMsg += ("Linenumber:" + e.lineNumber);
+                errMsg += ("filename:" + e.fileName);
+                errMsg += ("Stack Trace:" + e.stack);
+            }
+            alert(errMsg);
+
+        }
+    </script>
+</body>
+</html>
