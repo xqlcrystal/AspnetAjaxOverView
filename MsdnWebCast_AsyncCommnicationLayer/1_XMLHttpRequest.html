@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        function getxmlhttprequest() {
+
+            if (window.XMLHttpRequest) {
+                return new window.XMLHttpRequest();
+            } else {
+                var progIDs = ['Msxml2.XMLHTTP', 'Microsoft.XMLHTTP'];
+                for (var i = 0; i < progIDs.length; i++) {
+                    try {
+                        xmlhttp = new ActiveXObject(progIDs[i]);
+                    } catch (e) {
+
+                    }
+
+                }
+                return null;
+
+            }
+        }
+
+        function sendRequest() {
+            var xmlrequest = getxmlhttprequest();
+            xmlrequest.open("POST", "Handlers/RandomNumber.ashx", true);
+
+            xmlrequest.onreadystatechange = function () {
+                onReadyStateChange.apply(xmlrequest);
+
+            }
+
+
+            xmlrequest.send(null);
+        }
+
+
+        function onReadyStateChange() {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    alert(this.responseText);
+                }
+            } else {
+                throw new Error();
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="Test" value="Test" onclick="sendRequest();" />
+
+</body>
+</html>

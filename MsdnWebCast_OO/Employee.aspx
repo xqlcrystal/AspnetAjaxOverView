@@ -33,6 +33,19 @@
             var hepinghui = new MyNameSpace.FullTimeEmployee("hepinghui");
             hepinghui.set_year(5);
             display(hepinghui.getDescription());
+
+            display(
+            MyNameSpace.IEmployee.isImplementedBy(hepinghui));
+
+            var type = MyNameSpace.EmployeeType.toString(jeffery.get_type());
+            display(type);
+            
+
+            var all = MyNameSpace.MyFlags.All;
+            display(MyNameSpace.MyFlags.toString(all));
+
+            display(MyNameSpace.MyFlags.parse("Item1"));
+
         </script>
     </form>
 </body>

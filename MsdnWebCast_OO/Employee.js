@@ -1,4 +1,35 @@
 ﻿Type.registerNamespace("MyNameSpace");
+
+MyNameSpace.EmployeeType = function () {
+    throw Error.notImplemented();
+}
+MyNameSpace.EmployeeType.prototype = {
+    Intern: 0,
+    Vendor: 1,
+    FullTimeEmployee: 2
+}
+
+MyNameSpace.EmployeeType.registerEnum("MyNameSpace.EmployeeType");
+
+MyNameSpace.IEmployee = function () {
+    throw Error.notImplemented();
+}
+
+MyNameSpace.IEmployee.prototype = {
+    calculateSalary: function () {
+        throw Error.notImplemented();
+    },
+    get_type: function () {
+        throw Error.notImplemented();
+    }
+}
+
+MyNameSpace.IEmployee.registerInterface("MyNameSpace.IEmployee");
+
+
+
+
+
 MyNameSpace.Employee = function (name) {
     this._name = name ? name : "{ananymous}";
     this._year = 0;
@@ -27,7 +58,7 @@ MyNameSpace.Employee.prototype = {
             this.calculateSalary());
     }
 }
-MyNameSpace.Employee.registerClass("MyNameSpace.Employee");
+MyNameSpace.Employee.registerClass("MyNameSpace.Employee", null, MyNameSpace.IEmployee);
 
 
 MyNameSpace.Intern = function (name) {
@@ -42,10 +73,13 @@ MyNameSpace.Intern.prototype = {
     getDescription: function () {
         var description = MyNameSpace.Intern.callBaseMethod(this, "getDescription");
         return description += "what a poor inten";
+    },
+    get_type: function () {
+        return MyNameSpace.EmployeeType.Intern;
     }
 }
 
-MyNameSpace.Intern.registerClass("MyNameSpace.Intern", MyNameSpace.Employee);
+MyNameSpace.Intern.registerClass("MyNameSpace.Intern", MyNameSpace.Employee, MyNameSpace.IEmployee);
 
 
 MyNameSpace.Vendor = function (name) {
@@ -55,10 +89,13 @@ MyNameSpace.Vendor = function (name) {
 MyNameSpace.Vendor.prototype = {
     calculateSalary: function () {
         return 5000 + this.get_year() * 1000;
+    },
+    get_type: function () {
+        return MyNameSpace.EmployeeType.Vendor;
     }
 }
 
-MyNameSpace.Vendor.registerClass("MyNameSpace.Vendor", MyNameSpace.Employee);
+MyNameSpace.Vendor.registerClass("MyNameSpace.Vendor", MyNameSpace.Employee, MyNameSpace.IEmployee);
 
 
 MyNameSpace.FullTimeEmployee = function (name) {
@@ -68,10 +105,27 @@ MyNameSpace.FullTimeEmployee = function (name) {
 MyNameSpace.FullTimeEmployee.prototype = {
     calculateSalary: function () {
         return 15000 + this.get_year() * 2000;
+    },
+    get_type: function () {
+        return MyNameSpace.EmployeeType.FullTimeEmployee;
     }
 }
 
-MyNameSpace.FullTimeEmployee.registerClass("MyNameSpace.FullTimeEmployee", MyNameSpace.Employee);
+MyNameSpace.FullTimeEmployee.registerClass("MyNameSpace.FullTimeEmployee", MyNameSpace.Employee, MyNameSpace.IEmployee);
+
+MyNameSpace.MyFlags = function () {
+    throw Error.notImplemented();
+}
+
+MyNameSpace.MyFlags.prototype = {
+    Item1: 1,
+    Item2: 2,
+    Item3: 4,
+    None: 0,
+    All:7
+}
+
+MyNameSpace.MyFlags.registerEnum("MyNameSpace.MyFlags");
 
 
 
