@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_ScriptManager",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_21", "MsdnWebCast_21\MsdnWebCast_21.csproj", "{AD91178F-3884-481E-92A8-A71526FC36B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_ClientSideComponent_3", "MsdnWebCast_ClientSideComponent_3\MsdnWebCast_ClientSideComponent_3.csproj", "{0A57D643-1797-41FA-9BB5-B8A9D2313BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_21_Demo", "MsdnWebCast_21_Demo\MsdnWebCast_21_Demo.csproj", "{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{AD91178F-3884-481E-92A8-A71526FC36B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD91178F-3884-481E-92A8-A71526FC36B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD91178F-3884-481E-92A8-A71526FC36B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A57D643-1797-41FA-9BB5-B8A9D2313BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A57D643-1797-41FA-9BB5-B8A9D2313BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A57D643-1797-41FA-9BB5-B8A9D2313BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A57D643-1797-41FA-9BB5-B8A9D2313BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
