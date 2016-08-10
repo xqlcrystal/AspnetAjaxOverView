@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}</ProjectGuid>
+    <ProjectGuid>{714F0FF6-677B-4856-B7B2-9E34463CE610}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MsdnWebCast_21_Demo</RootNamespace>
-    <AssemblyName>MsdnWebCast_21_Demo</AssemblyName>
+    <RootNamespace>MsdnWebCast_ScriptControl_1</RootNamespace>
+    <AssemblyName>MsdnWebCast_ScriptControl_1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -58,28 +58,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DemoTimer.js" />
-    <Content Include="DemoTimerTest.aspx" />
-    <Content Include="DemoTimerTest.js" />
-    <Content Include="HoverButton.js" />
-    <Content Include="HoverButtonTest.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoTimerTest.aspx.cs">
-      <DependentUpon>DemoTimerTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DemoTimerTest.aspx.designer.cs">
-      <DependentUpon>DemoTimerTest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="HoverButtonTest.aspx.cs">
-      <DependentUpon>HoverButtonTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HoverButtonTest.aspx.designer.cs">
-      <DependentUpon>HoverButtonTest.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +84,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5365</DevelopmentServerPort>
+          <DevelopmentServerPort>11784</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5365/</IISUrl>
+          <IISUrl>http://localhost:11784/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

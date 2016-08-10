@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_ClientSideCompo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_21_Demo", "MsdnWebCast_21_Demo\MsdnWebCast_21_Demo.csproj", "{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_ScriptControl_1", "MsdnWebCast_ScriptControl_1\MsdnWebCast_ScriptControl_1.csproj", "{714F0FF6-677B-4856-B7B2-9E34463CE610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD48E6B0-6B87-407D-A5CC-2228FC661D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
