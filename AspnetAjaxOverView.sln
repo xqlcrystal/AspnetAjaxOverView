@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_21_Demo", "Msdn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsdnWebCast_ScriptControl_1", "MsdnWebCast_ScriptControl_1\MsdnWebCast_ScriptControl_1.csproj", "{714F0FF6-677B-4856-B7B2-9E34463CE610}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusExtender", "FocusExtender\FocusExtender.csproj", "{56933113-3D3A-462D-9925-D29A2D3A4BD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714F0FF6-677B-4856-B7B2-9E34463CE610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56933113-3D3A-462D-9925-D29A2D3A4BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56933113-3D3A-462D-9925-D29A2D3A4BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56933113-3D3A-462D-9925-D29A2D3A4BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56933113-3D3A-462D-9925-D29A2D3A4BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
